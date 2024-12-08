@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img from "../assets/me1.jpg";
+import img from "../assets/me6.jpg";
 import { Link } from "react-router-dom";
 import { IoMoon, IoSunny } from "react-icons/io5";
 
@@ -12,7 +12,7 @@ const About = () => {
    
   return (
     <div className="min-h-[90vh] bg-[#FBFBFB] flex justify-center items-center lg:p-40 sm:p-28 p-5  dark:bg-black ">
-       <button onClick={darkModeHandler} className="  absolute top-10 right-10  sm:right-40 sm:top-10 text-2xl "> {dark?<IoMoon/>:<IoSunny/>}</button>
+       <button onClick={darkModeHandler} className="  absolute top-10 right-10  sm:right-40 sm:top-10 text-2xl "> {dark?<IoSunny/>:<IoMoon/>}</button>
       <div className="flex flex-col justify-center items-center gap-y-4 ">
         <img
           src={img}

@@ -12,7 +12,7 @@ const Project = () => {
 },[location])
 
   return (
-    <div className='bg-[#FBFBFB] min-h-[90vh] lg:p-40 sm:p-28 p-10' ref={projectRef}>
+    <div className='bg-[#FBFBFB] min-h-[90vh] lg:p-40 sm:p-28 p-10 dark:bg-black dark:text-white' ref={projectRef} >
       <p className=" text-5xl font-semibold" >Projects</p>
 
       <div className='mt-16 flex flex-col gap-20'>
@@ -22,14 +22,14 @@ const Project = () => {
              <a
             href={"https://ecommerce-node-kk5p.onrender.com"}
             target='_blank'
-            className=" border border-black py-1 px-3  rounded-3xl text-xl"
+            className=" border border-black py-1 px-3  rounded-3xl text-xl dark:border-white"
           >
             Live
           </a>
           <a
           target='_blank'
             href={"https://github.com/SaurabPrasai/ECOMMERCE_NODE"}
-            className=" border border-black py-1 px-3  rounded-3xl text-xl"
+            className=" border border-black py-1 px-3  rounded-3xl text-xl dark:border-white"
           >
             Code
           </a>
@@ -41,14 +41,14 @@ const Project = () => {
              <a
             href={"https://room-finder-i8g9.onrender.com"}
             target='_blank'
-            className=" border border-black py-1 px-3  rounded-3xl text-xl"
+            className=" border border-black py-1 px-3  rounded-3xl text-xl dark:border-white"
           >
             Live
           </a>
           <a
             href={"https://github.com/SaurabPrasai/room-finder/"}
             target='_blank'
-            className=" border border-black py-1 px-3  rounded-3xl text-xl"
+            className=" border border-black py-1 px-3  rounded-3xl text-xl dark:border-white"
           >
             Code
           </a>
@@ -61,7 +61,7 @@ const Project = () => {
           <a
             href={"https://github.com/SaurabPrasai/Finance-Tracker"}
             target='_blank'
-            className=" border border-black py-1 px-3  rounded-3xl text-xl"
+            className=" border border-black py-1 px-3  rounded-3xl text-xl dark:border-white"
           >
             Code
           </a>

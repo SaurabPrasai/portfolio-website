@@ -3,7 +3,7 @@ import { SiChessdotcom, SiFacebook, SiGithub } from "react-icons/si";
 
 const Footer = () => {
   return (
-    <div className="max-h-[50vh] lg:p-40 sm:28 p-10 flex flex-col items-center md:flex-row  gap-y-6   ">
+    <div className="min-h-[50vh] lg:p-40 sm:28 p-10 flex flex-col items-center md:flex-row  gap-y-6   ">
       <div className="flex-1 flex flex-col gap-3">
         <p className="text-5xl font-semibold">Hey👋</p>
         <p className="text-xl tracking-wider  indent-8 leading-8">

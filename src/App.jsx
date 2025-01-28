@@ -3,9 +3,11 @@ import RootLayout from "./layout/RootLayout";
 import DynamicLayout from "./layout/DynamicLayout";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
+import NotFound from "./pages/NotFound";
+import PageNotFound from "./layout/PageNotFound";
 export default function App() {
   return (
-    <BrowserRouter >
+    <BrowserRouter  >
       <Routes>
         <Route path="/" element={<RootLayout />} />
         <Route
@@ -22,6 +24,14 @@ export default function App() {
             <DynamicLayout>
               <Projects />
             </DynamicLayout>
+          }
+        />
+         <Route
+          path="*"
+          element={
+            <PageNotFound>
+              <NotFound />
+            </PageNotFound>
           }
         />
       </Routes>

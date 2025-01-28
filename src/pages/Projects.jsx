@@ -68,6 +68,26 @@ const Project = () => {
              </div>
           <p className='text-xl pl-2'>-An expence monitor app created using MERN Stack.  </p>
          </div>
+
+         <div className=''>
+             <div className='flex items-center gap-x-6'> <p className='text-2xl font-semibold'>Update Damak</p>
+             <a
+            href={"https://update-damak.netlify.app"}
+            target='_blank'
+            className=" border border-black py-1 px-3  rounded-3xl text-xl dark:border-white"
+          >
+            Live
+          </a>
+          {/* <a
+            href={"https://github.com/SaurabPrasai/room-finder/"}
+            target='_blank'
+            className=" border border-black py-1 px-3  rounded-3xl text-xl dark:border-white"
+          >
+            Code
+          </a> */}
+             </div>
+          <p className='text-xl pl-2'>-A news portal created using Html, CSS and JavaScript. </p>
+         </div>
       </div>
 
     </div>

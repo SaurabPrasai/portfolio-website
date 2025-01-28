@@ -25,7 +25,7 @@ const About = () => {
           <span className="font-semibold">Hi there👋</span> <br />
           I'm <span className=" font-semibold">Saurab Prasai</span> and an undergraduate student of CS who loves
           javaScript, mongodb, node.js, cat and that one girl from
-          another faculty.
+          another .
         </p>
         <div className="flex flex-row gap-x-5">
         <Link

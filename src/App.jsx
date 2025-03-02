@@ -27,7 +27,7 @@ export default function App() {
           }
         />
          <Route
-          path="/*"
+          path="*"
           element={
             <PageNotFound>
               <NotFound />

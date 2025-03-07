@@ -37,7 +37,7 @@ const Footer = () => {
             label: "Facebook",
           },
           {
-            href: "https://www.chess.com/member/noobsaurab",
+            href: "https://www.chess.com/member/saurab2002",
             icon: <SiChessdotcom className="text-gray-800 dark:text-gray-200" />,
             label: "Chess.com",
           },

@@ -36,7 +36,7 @@ const Skills = () => {
     },
     {
       title: "Others",
-      skills: ["GIT", "Responsive Design", "VS Code", "Docker"],
+      skills: ["GIT", "Responsive Design", "VS Code"],
     },
   ];
 

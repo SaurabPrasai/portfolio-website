@@ -38,7 +38,7 @@ const About = () => {
         <p className="text-xl sm:text-2xl text-center font-Raleway p-4 leading-8 sm:leading-9 tracking-wide text-gray-800 dark:text-gray-200">
           <span className="font-semibold text-2xl sm:text-3xl">Hi there👋</span> <br />
           I'm <span className="font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Saurab Prasai</span>, 
-          an undergraduate CS student who loves JavaScript, MongoDB, Node.js, cats, and that one girl from another faculty.
+          an undergraduate CS student who loves JavaScript, MongoDB, Node.js and cat.
         </p>
 
         {/* Navigation buttons */}

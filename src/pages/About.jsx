@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img from "../assets/me3.jpg";
+import img from "../assets/me3.png";
 import { Link } from "react-router-dom";
 import { IoMoon, IoSunny } from "react-icons/io5";
 

@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useEffect, useRef } from "react";
+import { useLocation } from "react-router-dom";
 
 const Project = () => {
   const projectRef = useRef(null);
@@ -12,45 +12,31 @@ const Project = () => {
   }, [location]);
 
   const projects = [
-
-    {
-      title:"SnapStore",
-      liveLink:"https://snapstore32.netlify.app/",
-      description:"Capture and preserve your precious memories in one place created using React and Firebase.",
-      codeLink:"https://github.com/SaurabPrasai/Snapstore"
-    },
-    {
-      title: "SaurHub",
-      liveLink: "https://ecommerce-node-kk5p.onrender.com",
-      codeLink: "https://github.com/SaurabPrasai/ECOMMERCE_NODE",
-      description: "An Ecommerce app created using Node.js, MongoDB, and EJS.",
-    },
-    {
-      title: "Room Finder",
-      liveLink: "https://room-finder-i8g9.onrender.com",
-      codeLink: "https://github.com/SaurabPrasai/room-finder/",
-      description: "A room locator app created using React and Firebase.",
-    },
-    {
-      title: "Finance Tracker",
-      codeLink: "https://github.com/SaurabPrasai/Finance-Tracker",
-      description: "An expense monitor app created using MERN Stack.",
-    },
     {
       title: "Update Damak",
       liveLink: "https://update-damak.vercel.app",
       description: "A news portal created using HTML, CSS, and JavaScript.",
     },
+
     {
-      title: "AutoNews",
-      codeLink: "https://github.com/SaurabPrasai/automate-news-",
-      description: "A news-scraping app that sends automated updates using Node.js and cron jobs.",
+      title: "Hierarchy Management System",
+      liveLink: "http://hierarchymanagement.runasp.net/",
+      description:
+        "A hierarchical management system for organizations, enabling the management of company groups, individual companies, branches, users, and roles, with role-based access control, authentication/authorization, and a clean, maintainable architecture supported by unit testing.",
+      codeLink: "https://github.com/saurabprasai/hierarchymanagementsystem",
     },
-  
+
+    {
+      title: "Linkup - Social Media App",
+      liveLink: "https://linkup.runasp.net/",
+      description:
+        "Developed a social interaction system with email-based authentication, image uploads, posts, likes, comments, and real-time chat, designed using clean architecture and domain-driven principles.",
+      codeLink: "https://github.com/saurabprasai/linkup",
+    },
   ];
 
   return (
-    <div 
+    <div
       ref={projectRef}
       className="min-h-[90vh] bg-[#FBFBFB] dark:bg-[#030712] px-5 py-16  sm:px-28 lg:px-40 transition-colors duration-300"
     >
@@ -60,7 +46,7 @@ const Project = () => {
 
       <div className="space-y-12 max-w-3xl mx-auto">
         {projects.map((project, index) => (
-          <div 
+          <div
             key={index}
             className="group bg-white dark:bg-gray-900 p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 border border-gray-200 dark:border-gray-800"
           >

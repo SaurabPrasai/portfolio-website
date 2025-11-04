@@ -5,21 +5,25 @@ import { IoMoon, IoSunny } from "react-icons/io5";
 
 const About = () => {
   const [dark, setDark] = useState(false);
-  
+
   const darkModeHandler = () => {
     setDark(!dark);
-    document.body.classList.toggle('dark');
+    document.body.classList.toggle("dark");
   };
-  
+
   return (
     <div className="min-h-[90vh] bg-[#FBFBFB] dark:bg-[#030712] flex justify-center items-center px-5 py-16   transition-colors duration-300">
       {/* Dark mode toggle button */}
-      <button 
-        onClick={darkModeHandler} 
+      <button
+        onClick={darkModeHandler}
         className="fixed top-6 right-6 sm:top-10 sm:right-10 text-2xl p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-all duration-200 z-10"
         aria-label="Toggle dark mode"
       >
-        {dark ? <IoSunny className="text-yellow-400" /> : <IoMoon className="text-gray-600 dark:text-gray-300" />}
+        {dark ? (
+          <IoSunny className="text-yellow-400" />
+        ) : (
+          <IoMoon className="text-gray-600 dark:text-gray-300" />
+        )}
       </button>
 
       {/* Main content */}
@@ -36,9 +40,14 @@ const About = () => {
 
         {/* Description */}
         <p className="text-xl sm:text-2xl text-center font-Raleway p-4 leading-8 sm:leading-9 tracking-wide text-gray-800 dark:text-gray-200">
-          <span className="font-semibold text-2xl sm:text-3xl">Hi there👋</span> <br />
-          I'm <span className="font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Saurab Prasai</span>, 
-          an undergraduate CS student who loves JavaScript, MongoDB, Node.js and cat.
+          <span className="font-semibold text-2xl sm:text-3xl">Hi there👋</span>{" "}
+          <br />
+          I'm{" "}
+          <span className="font-semibold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+            Saurab Prasai
+          </span>
+          , an undergraduate CS student who loves JavaScript, C#, .NET and
+          MySQL.
         </p>
 
         {/* Navigation buttons */}

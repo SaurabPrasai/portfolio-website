@@ -10,14 +10,15 @@ const Footer = () => {
           Hey👋
         </h2>
         <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 tracking-wide leading-relaxed">
-          I specialize in crafting fast, high-quality, and visually stunning websites and web applications. 
-          If you have an exciting project in mind, need assistance, or just want to connect, feel free to reach out
-          to me via email at{" "}
-          <a 
-            href="mailto:saurab.lovetocode@gmail.com"
+          I specialize in building robust, high-performance, and scalable
+          backend systems and APIs using ASP.NET. If you have an exciting
+          project in mind, need assistance with backend development, or just
+          want to connect, feel free to reach out to me via email at {" "}
+          <a
+            href="mailto:saurab.prasai2@gmail.com"
             className="text-blue-600 dark:text-blue-400 hover:underline font-medium transition-colors duration-200"
           >
-            saurablovetocode@gmail.com
+            saurab.prasai2@gmail.com
           </a>
           .
         </p>
@@ -38,7 +39,9 @@ const Footer = () => {
           },
           {
             href: "https://www.chess.com/member/saurab2002",
-            icon: <SiChessdotcom className="text-gray-800 dark:text-gray-200" />,
+            icon: (
+              <SiChessdotcom className="text-gray-800 dark:text-gray-200" />
+            ),
             label: "Chess.com",
           },
         ].map((social, index) => (

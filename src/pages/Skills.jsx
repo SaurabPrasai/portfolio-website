@@ -1,17 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import {
   SiCss3,
+  SiDotnet,
   SiGit,
   SiHtml5,
   SiJavascript,
-  SiMongodb,
-  SiNodedotjs,
-  SiPostgresql,
+  SiGitlab,
+  SiMysql,
   SiReact,
-  SiRender,
-  SiTailwindcss,
-  SiTypescript,
+  SiPostman,
 } from "react-icons/si";
+import { TbBrandCSharp } from "react-icons/tb";
 import { DiVisualstudio } from "react-icons/di";
 import { useLocation } from "react-router-dom";
 
@@ -28,15 +27,15 @@ const Skills = () => {
   const skillCategories = [
     {
       title: "Frontend",
-      skills: ["HTML", "CSS", "Javascript", "React", "Typescript"],
+      skills: ["HTML", "CSS", "Javascript", "React"],
     },
     {
       title: "Backend",
-      skills: ["Node.js", "PostgreSQL", "Express", "REST API", "MongoDB"],
+      skills: ["C#", "MySQL", ".NET", "Clean Code", "REST API"],
     },
     {
       title: "Others",
-      skills: ["GIT", "Responsive Design", "VS Code"],
+      skills: ["GIT", "GitLab", "Postman", "Visual Studio Code"],
     },
   ];
 
@@ -45,20 +44,19 @@ const Skills = () => {
     <SiCss3 className="text-blue-600" />,
     <SiReact className="text-cyan-400" />,
     <SiJavascript className="text-yellow-400" />,
-    <SiTypescript className="text-blue-700" />,
-    <DiVisualstudio className="text-blue-500 text-6xl" />,
-    <SiMongodb className="text-green-600" />,
-    <SiPostgresql className="text-blue-800" />,
+    <TbBrandCSharp className="text-purple-600" />,
+    <SiMysql className="text-[#00758F]" />,
+    <SiDotnet className="text-purple-600" />,
+    <DiVisualstudio className="text-[#463668] text-5xl" />,
     <SiGit className="text-orange-700" />,
-    <SiNodedotjs className="text-green-500" />,
-    <SiTailwindcss className="text-teal-500" />,
-    <SiRender className="text-purple-600" />,
+    <SiPostman className="text-[#FF6C37]" />,
+    <SiGitlab className="text-orange-700" />,
   ];
 
   return (
     <div className="min-h-[90vh] bg-[#FBFBFB] dark:bg-[#030712] px-5 py-16  sm:px-28 lg:px-40 transition-colors duration-300">
-      <h1 
-        ref={skillsRef} 
+      <h1
+        ref={skillsRef}
         className="text-4xl sm:text-5xl font-semibold text-gray-800 dark:text-gray-100 mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
       >
         Skills
@@ -74,7 +72,7 @@ const Skills = () => {
               </h2>
               <div className="grid grid-cols-2 gap-3 text-lg">
                 {category.skills.map((skill, skillIndex) => (
-                  <span 
+                  <span
                     key={skillIndex}
                     className="text-gray-700 dark:text-gray-300 py-1 px-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-200"
                   >
@@ -89,7 +87,7 @@ const Skills = () => {
         {/* Tech Icons */}
         <div className="hidden lg:grid lg:grid-cols-4 lg:pl-12 gap-8 items-center justify-items-center">
           {techIcons.map((icon, index) => (
-            <div 
+            <div
               key={index}
               className="text-5xl transform hover:scale-110 transition-transform duration-300 p-4 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800"
             >
